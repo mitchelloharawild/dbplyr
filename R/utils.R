@@ -29,7 +29,7 @@ named_commas <- function(...) {
 
 commas <- function(...) paste0(..., collapse = ", ")
 
-in_travis <- function() identical(Sys.getenv("TRAVIS"), "true")
+in_actions <- function() identical(Sys.getenv("GITHUB_ACTIONS"), "true")
 
 unique_name <- local({
   i <- 0

@@ -35,10 +35,10 @@ test_that("Dots are collapsed into a single variable", {
   )
 })
 
-test_that("Correctly identifies the Travis flag", {
+test_that("Correctly identifies the GitHub Actions flag", {
   expect_equal(
-    in_travis(),
-    Sys.getenv("TRAVIS") == "true"
+    in_actions(),
+    Sys.getenv("GITHUB_ACTIONS") == "true"
   )
 })
 
