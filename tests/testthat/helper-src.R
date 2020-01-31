@@ -23,7 +23,7 @@ if (test_srcs$length() == 0) {
     test_register_con("postgres", RPostgreSQL::PostgreSQL(),
       dbname = "test",
       host = "localhost",
-      user = ""
+      user = "postgres"
     )
   }
 }
