@@ -6,7 +6,7 @@ if (test_srcs$length() == 0) {
   if (identical(Sys.getenv("GITHUB_ACTIONS"), "true")) {
     test_register_con("postgres", RPostgreSQL::PostgreSQL(),
       dbname = "test",
-      user = "runner",
+      user = "postgres",
       password = ""
     )
   } else {
